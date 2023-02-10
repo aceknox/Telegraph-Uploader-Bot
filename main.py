@@ -1,4 +1,4 @@
-#©( aaceknox )
+#©aceknox
 import os
 import time
 import math
