@@ -7,14 +7,13 @@ YOU CAN SIMPLY DEPLOY ON HEROKU BY CLICKING THE BUTTON BELOW
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/aceknox/Telegraph-Uploader-Bot/)
 
 # Local Machine
-Clone the repository
-
-Install requirements: pip3 install -r requirements.txt
-
-edit the sample_config.py wih your configs
-
+Give you bot variables
+```py
+git clone https://github.com/aceknox/Telegraph-Uploader-Bot
+cd Telegraph-Uploader-Bot
+pip3 install -r requirements.txt
 python3 bot.py
-
+```
 Now send /start to you bot to see if it is running!
 
 
