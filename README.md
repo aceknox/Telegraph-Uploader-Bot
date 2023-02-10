@@ -12,7 +12,7 @@ Give you bot variables
 git clone https://github.com/aceknox/Telegraph-Uploader-Bot
 cd Telegraph-Uploader-Bot
 pip3 install -r requirements.txt
-python3 bot.py
+python3 main.py
 ```
 Now send /start to you bot to see if it is running!
 
