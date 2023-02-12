@@ -35,4 +35,4 @@ For any type of help on deploy. Contact us on [knox support](https://telegram.me
 
 # Thanks To
 
-[aceknox](https://github.com/aceknox) it's me
+• [aceknox](https://github.com/aceknox) it's me
