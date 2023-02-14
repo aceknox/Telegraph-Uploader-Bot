@@ -5,11 +5,10 @@ A Telegram Bot Written In Python To Upload Medias To telegra.ph
 <a href="https://telegram.me/mediauploadertelegraphbot"><img src="https://img.shields.io/badge/Telegram%20Bot-blue.svg?logo=telegram"></a>
 
 # Local Machine
-Give you bot variables
+Edit bot variables
 ```py
 git clone https://github.com/aceknox/Telegraph-Uploader-Bot
 cd Telegraph-Uploader-Bot
-<edit variables>
 pip3 install -r requirements.txt
 python3 main.py
 ```
