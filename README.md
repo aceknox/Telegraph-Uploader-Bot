@@ -2,7 +2,6 @@
 A Telegram Bot Written In Python To Upload Medias To telegra.ph   
 
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/aceknox/Telegraph-Uploader-Bot/)
 
 # Local Machine
 Give you bot variables
