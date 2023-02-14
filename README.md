@@ -2,7 +2,7 @@
 A Telegram Bot Written In Python To Upload Medias To telegra.ph   
 
 # Bot
-<a href="https://telegram.me/mediauploadertelegraphbot"><img src="https://img.shields.io/badge/Telegram%20Bot-blue.svg?logo=telegram"></a>
+##<a href="https://telegram.me/mediauploadertelegraphbot"><img src="https://img.shields.io/badge/Telegram%20Bot-blue.svg?logo=telegram"></a>
 
 # Local Machine
 Give you bot variables
