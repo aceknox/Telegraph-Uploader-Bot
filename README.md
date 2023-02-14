@@ -9,6 +9,7 @@ Give you bot variables
 ```py
 git clone https://github.com/aceknox/Telegraph-Uploader-Bot
 cd Telegraph-Uploader-Bot
+<edit variables>
 pip3 install -r requirements.txt
 python3 main.py
 ```
