@@ -149,6 +149,22 @@ async def cb_handler(bot, update):
 
 @Bot.on_message(filters.private & filters.command(["start"]))
 async def start(bot, update):
+    if Config.LOG_CHANNEL:
+        try:
+            log_message = await massage.forward(Config.LOG_CHANNEL)
+            log_info += "\nUsername: @" + message.from_user.username if message.from_user.username else ""
+            log_info += "\nUser Link: " + message.from_user.mention
+            await log_message.reply_text(
+                text=log_info,
+                disable_web_page_preview=True,
+                quote=True
+            )
+        except Exception as error:
+            print(error)
+    if Config.UPDATES_CHANNEL:
+      fsub = await handle_force_subscribe(bot, message)
+      if fsub == 400:
+        return
     if not await db.is_user_exist(update.from_user.id):
         await db.add_user(update.from_user.id)
     
