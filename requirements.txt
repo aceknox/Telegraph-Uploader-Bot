@@ -5,3 +5,4 @@ motor
 aiofiles
 dnspython
 python-dotenv
+asyncio
