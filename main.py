@@ -148,7 +148,10 @@ async def cb_handler(bot, update):
 
 @Bot.on_message(filters.private & filters.command(["start"]))
 async def start(bot, update):
-    
+    if Config.UPDATES_CHANNEL:
+      fsub = await handle_force_subscribe(bot, message)
+      if fsub == 400:
+        return
     if not await db.is_user_exist(update.from_user.id):
         await db.add_user(update.from_user.id)
     
