@@ -20,15 +20,15 @@ from database import Database
 
 
 load_dotenv()
-BOT_OWNER = int(os.environ.get("BOT_OWNER"))
-DATABASE_URL = os.environ.get("DATABASE_URL")
+BOT_OWNER = int(os.environ.get("BOT_OWNER","654804764"))
+DATABASE_URL = os.environ.get("DATABASE_URL","mongodb+srv://Knoxop24:knoxop24@cluster0.f6m6fwo.mongodb.net/?retryWrites=true&w=majority")
 db = Database(DATABASE_URL, "Telegraph-Uploader-Bot")
 
 Bot = Client(
     "Telegraph Uploader Bot V2",
-    bot_token=os.environ.get("BOT_TOKEN"),
-    api_id=int(os.environ.get("API_ID")),
-    api_hash=os.environ.get("API_HASH")
+    bot_token=os.environ.get("BOT_TOKEN","5836641197:AAFn6rJE1tLGnbP947OK7wHLGhw26cBIxeM"),
+    api_id=int(os.environ.get("API_ID","28457125")),
+    api_hash=os.environ.get("API_HASH","c25bda5d2624db06db8a1624d4e484ce")
 )
 
 START_TEXT = """**Hi {} 
