@@ -29,7 +29,7 @@ Now send /start to you bot to see if it is running!
 
 ## SUPPORT
 
-For any type of help on deploy. Contact us on [knox support](https://telegram.me/knoxsupport).
+For help Contact us on [knox support](https://telegram.me/knoxsupport).
 
 # Thanks To
 
