@@ -17,7 +17,7 @@ Now send /start to you bot to see if it is running!
 
 # Varibels
 
-``BOT_TOKEN : YOUR BOT TOKEN. GET IT FROM @BOTFATHER``
+``BOT_TOKEN : YOUR BOT TOKEN``
 
 ``API_ID : YOUR TELEGRAM APP ID.``
 
