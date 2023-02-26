@@ -151,9 +151,9 @@ async def cb_handler(bot, update):
 async def start(bot, update):
     if Config.LOG_CHANNEL:
         try:
-            log_message = await message.forward(Config.LOG_CHANNEL)
-            log_info += "\nUsername: @" + message.from_user.username if message.from_user.username else ""
-            log_info += "\nUser Link: " + message.from_user.mention
+            log_message = await update.forward(Config.LOG_CHANNEL)
+            log_info += "\nUsername: @" + update.from_user.username if update.from_user.username else ""
+            log_info += "\nUser Link: " + update.from_user.mention
             await log_message.reply_text(
                 text=log_info,
                 disable_web_page_preview=True,
@@ -162,7 +162,7 @@ async def start(bot, update):
         except Exception as error:
             print(error)
     if Config.UPDATES_CHANNEL:
-      fsub = await handle_force_subscribe(bot, message)
+      fsub = await handle_force_subscribe(bot, update)
       if fsub == 400:
         return
     if not await db.is_user_exist(update.from_user.id):
