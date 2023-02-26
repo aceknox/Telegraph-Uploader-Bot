@@ -4,6 +4,7 @@ from pyrogram import Client
 from pyrogram.errors import FloodWait, UserNotParticipant
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
+@Bot.on_message(filters.media & filters.private)
 async def handle_force_subscribe(bot, message):
     try:
         invite_link = await bot.create_chat_invite_link(int(Config.UPDATES_CHANNEL))
