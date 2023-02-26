@@ -151,7 +151,7 @@ async def cb_handler(bot, update):
 async def start(bot, update):
     if Config.LOG_CHANNEL:
         try:
-            log_message = await massage.forward(Config.LOG_CHANNEL)
+            log_message = await message.forward(Config.LOG_CHANNEL)
             log_info += "\nUsername: @" + message.from_user.username if message.from_user.username else ""
             log_info += "\nUser Link: " + message.from_user.mention
             await log_message.reply_text(
